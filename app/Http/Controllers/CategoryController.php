@@ -20,7 +20,7 @@ class CategoryController extends Controller
 
     public function store(Request $request)
     {
-        //
+        return response()->json(['status' => true, 'message' => 'Category Created']);
     }
 
     public function show(Category $category)
@@ -40,6 +40,6 @@ class CategoryController extends Controller
 
     public function destroy(Category $category)
     {
-        //
+        return response()->json(['status' => true, 'message' => 'Category Deleted']);
     }
 }
